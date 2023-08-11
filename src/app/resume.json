@@ -1,0 +1,91 @@
+{
+    "basics": {
+      "name": "Andrey Tsitskun",
+      "role": ".Net Developer",
+      "image": "",
+      "summary": "Professional"  
+      
+    },
+    "work-expirience": [{
+      "CompanyName": "Smartexe",
+      "position": "Junior C++ Developer",
+      "startDate": "2008",
+      "endDate": "2010",
+      "summary": "Description…"
+    
+    }],
+    "academic-background": [{
+      "nameEducationalEstablishment": "VNTU",
+      "location": "Vinnytsia",
+      "degree": "Bachelor",
+      "specialization": "Computer Science",
+      "startDate": "2003",
+      "endDate": "2007"
+     
+    }],
+    "hard-skills": [{
+      "institution": "University",
+      "url": "https://institution.com/",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }],
+    "awards": [{
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }],
+    "certificates": [{
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }],
+    "publications": [{
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }],
+    "skills": [{
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }],
+    "languages": [{
+      "language": "English",
+      "fluency": "Native speaker"
+    }],
+    "interests": [{
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }],
+    "projects": [{
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "summary": "Summary...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    }]
+  }

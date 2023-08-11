@@ -1,0 +1,39 @@
+    $primary-color: #D50057;
+    $full-size: 100%;
+
+    .top-bar{
+    height: auto;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    align-items: center;
+
+    .menu-row {
+      display: flex;
+      justify-content: flex-end;
+      float: right;
+    
+    .logo {
+        display: flex;
+        float: right;
+        align-items: center;
+        margin-right: auto;
+    
+        img {
+          height: 35px;
+          margin-right: 10px;
+        }
+      }
+            
+          .menu {
+            float: right;
+
+            .top-bar-icon {
+              margin-right: 10px;
+            }
+          }
+        }
+       
+    }
