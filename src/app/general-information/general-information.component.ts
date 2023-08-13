@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-general-information',
+  selector: 'general-info',
   templateUrl: './general-information.component.html',
   styleUrls: ['./general-information.component.scss']
 })
-export class GeneralInformationComponent {
 
-}
+export class GeneralInfoComponent {}

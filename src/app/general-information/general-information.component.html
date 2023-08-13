@@ -1,1 +1,47 @@
-<img src=".." alt="">
+<main>
+    <section class="page-header">
+         <div class="page-title">
+        <h2>Personal information</h2>
+    </div>
+
+    <div class="page-tips">
+        <div class="quick-tips">
+            <button mat-button class="tips-button"> 
+                <i class="fa-solid fa-lightbulb"></i>
+                 Quick Tips
+            </button>
+        </div>
+    </div>
+    </section>
+   
+    <section class="personal-info">
+        <div class="profile-photo">
+            <span class="profile">Profile Picture</span>
+        <div class="profile-pic">
+            <div class="photo-block">
+                <img src="./assets/img/empty.jpg" alt="photo">
+            </div>
+            
+            <div class="upload-block">
+                <mat-slide-toggle class="photo-toggle">Show Picture</mat-slide-toggle>
+                <button class="upload-photo">Upload Photo</button>
+            </div>  
+        </div>
+        </div>
+        
+
+        <div class="job-title">
+            <span for="job">Job Title</span>
+            <mat-form-field>
+                <input type="specialisation">
+            </mat-form-field>
+        </div>
+
+    <mat-form-field>
+        <mat-label>First Name</mat-label>
+        <input matInput>
+    </mat-form-field>
+    </section>
+
+
+</main>

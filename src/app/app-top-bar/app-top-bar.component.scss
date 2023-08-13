@@ -9,6 +9,9 @@
     flex-direction: row;  
     justify-content: space-between;
     align-items: center;
+    border-bottom: 3px solid #D50057;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
 
     .menu-row {
       display: flex;
@@ -25,15 +28,15 @@
           height: 35px;
           margin-right: 10px;
         }
-      }
-            
-          .menu {
-            float: right;
+      }   
 
-            .top-bar-icon {
-              margin-right: 10px;
-            }
-          }
+      .menu {
+        float: right;
+
+        .top-bar-icon {
+          margin-right: 10px;
         }
+      }
+    }
        
     }

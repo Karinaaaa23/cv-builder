@@ -1,0 +1,103 @@
+    $primary-color: #D50057;
+
+    /*Fonts*/
+
+    *{
+        font-family: 'Gobold';
+        font-weight: 400;
+
+        // color:  #1C1F2A;
+    }
+
+    main{
+        padding: 10px;
+        line-height: 1;
+
+        .page-header{
+            display: flex;
+            flex-direction: row;  
+            justify-content: space-between;
+            align-items: center;
+
+
+            .page-tips{
+                background-color: white;
+                border:1px solid $primary-color ;
+                font-size: 15px;
+                border-radius: 2em;
+                padding: 10px;
+                .quick-tips{
+                    .tips-button{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        background-color: white;
+                        display: block;
+                        text-align: center;
+                        all: unset;
+
+                            &:hover {
+                                color: $primary-color;
+                                
+                            }
+                        }
+
+                    }
+            
+
+        
+                }
+
+        }
+
+        /*Personal Information*/
+
+    .personal-info{
+            height: 20px;
+            padding: 1em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        .profile-photo{
+        .profile-pic{
+            display: flex;
+            align-items: center;
+    
+            .photo-block{
+                margin-right: 10px;
+                
+                img{
+                    height: 120px;
+                    width: 120px;
+                    padding: 10px 10px 10px 0 ;
+                    }
+                }
+            
+                .upload-block{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 12px;
+                    
+                    .photo-toggle{
+                        padding-bottom: 10px;
+                    }
+
+                    .upload-photo{
+                        all: unset;
+                        text-align: center;
+                        border:1px solid $primary-color ;
+                        padding: 5px;
+                        border-radius: 2em;
+
+                        &:hover{
+                            background-color: $primary-color;
+                        }
+                    }
+                }
+            }
+                        
+        }
+    }
+
+}
+    
