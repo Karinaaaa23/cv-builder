@@ -5,13 +5,13 @@
     *{
         font-family: 'Gobold';
         font-weight: 400;
-
-        // color:  #1C1F2A;
     }
 
     main{
         padding: 10px;
         line-height: 1;
+
+         /* Page Header */
 
         .page-header{
             display: flex;
@@ -37,66 +37,72 @@
 
                             &:hover {
                                 color: $primary-color;
-                                
+                                                           
                             }
                         }
 
-                    }
-            
-
-        
+                    }        
                 }
 
         }
 
         /*Personal Information*/
 
-    .personal-info{
-            height: 20px;
-            padding: 1em;
-            display: flex;
-            flex-direction: row;
+    .personal-info-group,
+    .work-experience-group{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             justify-content: space-between;
-            
-        .profile-photo{
-        .profile-pic{
-            display: flex;
-            align-items: center;
-    
-            .photo-block{
-                margin-right: 10px;
-                
-                img{
-                    height: 120px;
-                    width: 120px;
-                    padding: 10px 10px 10px 0 ;
-                    }
-                }
-            
-                .upload-block{
-                    display: flex;
-                    flex-direction: column;
-                    font-size: 12px;
+            // background-color: grey;
+
+            label{
+                display: inline-block;
+                // line-height: 20px;
+                width: 7.5em;
+            }
+  
+
+            .profile-photo{
+                display: flex;
+                align-items: center;
+        
+                .photo-block{
+                    width: 7.5em;
                     
-                    .photo-toggle{
-                        padding-bottom: 10px;
-                    }
-
-                    .upload-photo{
-                        all: unset;
-                        text-align: center;
-                        border:1px solid $primary-color ;
-                        padding: 5px;
-                        border-radius: 2em;
-
-                        &:hover{
-                            background-color: $primary-color;
+                    img{
+                        height: 90px;
+                        width: 90px;
+                        padding: 10px 10px 10px 0 ;
+                        border-radius: 50%;
                         }
                     }
-                }
-            }
+                
+                    .upload-block{
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 12px;
                         
-        }
+                        .photo-toggle{
+                            padding-bottom: 10px;
+                        }
+
+                        .upload-photo{
+                            all: unset;
+                            text-align: center;
+                            border:1px solid $primary-color ;
+                            padding: 5px;
+                            border-radius: 2em;
+
+                            &:hover{
+                                background-color: $primary-color;
+                            }
+                        }
+           
+                    }                            
+            
+                }
+
+
     }
 
 }

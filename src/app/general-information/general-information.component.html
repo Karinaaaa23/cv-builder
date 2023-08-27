@@ -1,46 +1,81 @@
 <main>
     <section class="page-header">
-         <div class="page-title">
         <h2>Personal information</h2>
-    </div>
-
-    <div class="page-tips">
-        <div class="quick-tips">
-            <button mat-button class="tips-button"> 
-                <i class="fa-solid fa-lightbulb"></i>
-                 Quick Tips
-            </button>
+        <div class="page-header-group">
+            <div class="page-tips">
+                <div class="quick-tips">
+                    <button mat-button class="tips-button"> 
+                    <i class="fa-solid fa-lightbulb"></i>
+                        Quick Tips
+                    </button>
+                </div>
+            </div>
         </div>
-    </div>
+   
     </section>
    
+    <!-- Personal information -->
     <section class="personal-info">
-        <div class="profile-photo">
-            <span class="profile">Profile Picture</span>
-        <div class="profile-pic">
-            <div class="photo-block">
-                <img src="./assets/img/empty.jpg" alt="photo">
-            </div>
-            
-            <div class="upload-block">
-                <mat-slide-toggle class="photo-toggle">Show Picture</mat-slide-toggle>
-                <button class="upload-photo">Upload Photo</button>
-            </div>  
-        </div>
-        </div>
-        
-
-        <div class="job-title">
-            <span for="job">Job Title</span>
+    <div class="personal-info-group">
+        <div class="personal-details">
+            <label for="first-name" minlenght="3">First Name </label>
             <mat-form-field>
-                <input type="specialisation">
+            <input matInput type="text" id="first-name">
             </mat-form-field>
         </div>
 
-    <mat-form-field>
-        <mat-label>First Name</mat-label>
-        <input matInput>
-    </mat-form-field>
+        <div class="personal-details">
+            <label class="avatar">Profile Picture</label>
+            <div class="profile-photo">
+                <div class="photo-block">
+                    <img src="./assets/img/empty.jpg" alt="photo" id="avatar">
+                </div>
+                
+                <div class="upload-block">
+                    <mat-slide-toggle class="photo-toggle">Show Picture</mat-slide-toggle>
+                    <button class="upload-photo">Upload Photo</button>
+                </div>
+            </div>
+        </div>
+            
+        <div class="personal-details">
+            <label for="surname">Surname </label>
+            <mat-form-field>
+            <input matInput type="text" id="surname">
+            </mat-form-field>
+        </div>
+
+        <div class="personal-details">
+            <label for="job">Job Title </label>
+            <mat-form-field>
+                <input matInput type="text" id="job">
+            </mat-form-field>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="work-experience">
+        <h2>Work Experience</h2>
+        <div class="work-experience-group">
+            <div class="experience-details">         
+            <label for="position">Period</label>
+            <mat-form-field>
+                <mat-date-range-input
+                [formGroup]="campaignOne"
+                [rangePicker]="campaignOnePicker"
+                [comparisonStart]="campaignTwo.value.start"
+                [comparisonEnd]="campaignTwo.value.end">
+                <input matStartDate placeholder="Start date" formControlName="start">
+                <input matEndDate placeholder="End date" formControlName="end">
+                </mat-date-range-input>
+                <!-- <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint> -->
+                <mat-datepicker-toggle matIconSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
+                <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
+            </mat-form-field>
+        </div>
+        </div> 
     </section>
 
 
