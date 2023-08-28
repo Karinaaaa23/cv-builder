@@ -56,26 +56,10 @@
     </section>
 
     <!-- Work Experience -->
+    <app-work-experience></app-work-experience>
+
     <section class="work-experience">
-        <h2>Work Experience</h2>
-        <div class="work-experience-group">
-            <div class="experience-details">         
-            <label for="position">Period</label>
-            <mat-form-field>
-                <mat-date-range-input
-                [formGroup]="campaignOne"
-                [rangePicker]="campaignOnePicker"
-                [comparisonStart]="campaignTwo.value.start"
-                [comparisonEnd]="campaignTwo.value.end">
-                <input matStartDate placeholder="Start date" formControlName="start">
-                <input matEndDate placeholder="End date" formControlName="end">
-                </mat-date-range-input>
-                <!-- <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint> -->
-                <mat-datepicker-toggle matIconSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
-                <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
-            </mat-form-field>
-        </div>
-        </div> 
+
     </section>
 
 
