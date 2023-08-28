@@ -3,13 +3,15 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE, MatNativeDateModule} from '@angular/material/core';
-import {MatDatepicker, MatDatepickerModule} from '@angular/material/datepicker';  
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatDatepickerModule} from '@angular/material/datepicker';  
 import { GeneralInfoComponent } from './general-information.component';
+import { ImageUploadModuleModule } from '../image-upload-component/image-upload.module';
+import { WorkExperienceModule } from '../work-experience/work-experience.module';
 
 @NgModule({
   declarations: [
-     GeneralInfoComponent
+     GeneralInfoComponent,
   ],
   imports: [
     MatFormFieldModule,
@@ -19,10 +21,12 @@ import { GeneralInfoComponent } from './general-information.component';
     MatNativeDateModule,
     FormsModule,
     ReactiveFormsModule,
+    ImageUploadModuleModule,
+    WorkExperienceModule,
   ],
   
   exports: [
     GeneralInfoComponent,
   ]
 })
-export class GeneralInformationModule { }
+export class GeneralInfoModule { }

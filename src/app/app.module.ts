@@ -1,30 +1,34 @@
 import {  CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { AppTopBarModule } from './app-top-bar/app-top-bar.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppTopBarComponent } from './app-top-bar/app-top-bar.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { GeneralInformationModule } from './general-information/general-information.module';
+import { GeneralInfoModule } from './general-information/general-information.module';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { AcademicBackgroundComponent } from './academic-background/academic-background.component';
+import { ProfessionalSkillsComponent } from './professional-skills/professional-skills.component';
+import { ProjectsAccomplishedComponent } from './projects-accomplished/projects-accomplished.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppTopBarComponent, 
+    WorkExperienceComponent,
+    AcademicBackgroundComponent,
+    ProfessionalSkillsComponent,
+    ProjectsAccomplishedComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatMenuModule,
-    MatToolbarModule,
-    MatIconModule,
-    GeneralInformationModule,
+    AppTopBarModule,
+    GeneralInfoModule,
   ],
 
   providers: [],
   bootstrap: [AppComponent], 
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}
+
