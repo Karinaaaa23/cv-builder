@@ -1,0 +1,35 @@
+/*Fonts*/
+
+*{
+    font-family: 'Gobold';
+    font-weight: 400;
+}
+ main{
+    padding: 10px;
+    line-height: 1;
+
+    label{
+        display: inline-block;
+        width: 7em;
+    }
+
+    .experience-details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // justify-content: space-between;
+
+        .work-experience-group{
+            position: inherit;
+            display: block;
+            input{
+
+                position: inherit;
+            }
+        }
+
+        
+    }
+    
+
+    
+ }

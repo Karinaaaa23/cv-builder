@@ -1,19 +1,44 @@
-<h2>Work Experience</h2>
-<div class="work-experience-group">
-    <div class="experience-details">         
-    <label for="position">Period</label>
-    <mat-form-field>
-        <mat-date-range-input
-        [formGroup]="campaignOne"
-        [rangePicker]="campaignOnePicker"
-        [comparisonStart]="campaignTwo.value.start"
-        [comparisonEnd]="campaignTwo.value.end">
-        <input matStartDate placeholder="Start date" formControlName="start">
-        <input matEndDate placeholder="End date" formControlName="end">
-        </mat-date-range-input>
-        <!-- <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint> -->
-        <mat-datepicker-toggle matIconSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
-        <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
-    </mat-form-field>
-</div>
-</div> 
+<main>
+    <section class="page-header">
+        <h2>Work Experience</h2>
+    </section>   
+
+    <section class="work-experience-group">
+        <div class="experience-details">
+
+            <div class="workplace-info">
+                <div class="workplace-details">
+                    <label for="workplace-name" minlenght="3">Company</label>
+                    <mat-form-field>
+                    <input matInput type="text" id="worlpace-name">
+                    </mat-form-field>
+                </div> 
+            </div>
+            
+            <div class="experience-info">
+                <div class="experience-details">
+                    <label for="position-name">Posiotion</label>
+                    <mat-form-field>
+                    <input matInput type="text" id="position-name">
+                    </mat-form-field>
+                </div> 
+            </div>
+            
+        <label for="position">Period</label>
+        <mat-form-field>
+            <mat-date-range-input
+            [formGroup]="campaignOne"
+            [rangePicker]="campaignOnePicker"
+            [comparisonStart]="campaignTwo.value.start"
+            [comparisonEnd]="campaignTwo.value.end">
+            <input matStartDate placeholder="Start date" formControlName="start">
+            <input matEndDate placeholder="End date" formControlName="end">
+            </mat-date-range-input>
+            <!-- <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint> -->
+            <mat-datepicker-toggle matIconSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
+            <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
+        </mat-form-field>
+    </div>
+</section> 
+
+</main>

@@ -13,7 +13,6 @@ import { WorkExperienceModule } from '../work-experience/work-experience.module'
     ImageUploadModuleModule,
     MatSlideToggleModule,
     MatFormFieldModule,
-    WorkExperienceModule,
   ],
   
   exports: [
