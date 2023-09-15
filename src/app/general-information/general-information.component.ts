@@ -12,24 +12,10 @@ const year = today.getFullYear();
   selector: 'general-info',
   templateUrl: './general-information.component.html',
   styleUrls: ['./general-information.component.scss'],
-  // standalone: true,
-  providers:[],
 })
 
 
 
-export class GeneralInfoComponent implements OnInit{
-
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
-  campaignOne = new FormGroup({
-    start: new FormControl(new Date(year, month, 13)),
-    end: new FormControl(new Date(year, month, 16)),
-  });
-  campaignTwo = new FormGroup({
-    start: new FormControl(new Date(year, month, 15)),
-    end: new FormControl(new Date(year, month, 19)),
-  });
+export class GeneralInfoComponent{
   
 }

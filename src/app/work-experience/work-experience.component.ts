@@ -9,17 +9,16 @@ const year = today.getFullYear();
   selector: 'app-work-experience',
   templateUrl: './work-experience.component.html',
   styleUrls: ['./work-experience.component.scss'],
-  //standalone: true,
 })
 
 export class WorkExperienceComponent {
 
   campaignOne = new FormGroup({
-    start: new FormControl(new Date(year, month, 13)),
-    end: new FormControl(new Date(year, month, 16)),
+    start: new FormControl(new Date(year, month)),
+    end: new FormControl(new Date(year, month)),
   });
   campaignTwo = new FormGroup({
-    start: new FormControl(new Date(year, month, 15)),
-    end: new FormControl(new Date(year, month, 19)),
+    start: new FormControl(new Date(year, month)),
+    end: new FormControl(new Date(year, month)),
   });
 }

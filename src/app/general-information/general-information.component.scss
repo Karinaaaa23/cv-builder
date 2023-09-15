@@ -1,109 +1,103 @@
-    $primary-color: #D50057;
 
-    /*Fonts*/
+$primary-color: #D50057;
 
-    *{
-        font-family: 'Gobold';
-        font-weight: 400;
-    }
+main{
+    padding: 10px;
+    line-height: 1;
 
-    main{
+    /* Page Header */
+
+.page-header{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    align-items: center;
+
+
+    .page-tips{
+        background-color: white;
+        border:1px solid $primary-color ;
+        font-size: 15px;
+        border-radius: 2em;
         padding: 10px;
-        line-height: 1;
 
-         /* Page Header */
-
-        .page-header{
-            display: flex;
-            flex-direction: row;  
-            justify-content: space-between;
-            align-items: center;
-
-
-            .page-tips{
+        .quick-tips{
+            .tips-button{
+                text-decoration: none;
+                text-transform: uppercase;
                 background-color: white;
-                border:1px solid $primary-color ;
-                font-size: 15px;
-                border-radius: 2em;
-                padding: 10px;
-                .quick-tips{
-                    .tips-button{
-                        text-decoration: none;
-                        text-transform: uppercase;
-                        background-color: white;
-                        display: block;
-                        text-align: center;
-                        all: unset;
+                display: block;
+                text-align: center;
+                all: unset;
 
-                            &:hover {
-                                color: $primary-color;
-                                                           
-                            }
-                        }
-
-                    }        
+                    &:hover {
+                        color: $primary-color;
+                                                    
+                    }
                 }
 
+            }        
         }
 
-        /*Personal Information*/
+}
 
-    .personal-info-group,
-    .work-experience-group{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-content: space-between;
-            // background-color: grey;
+/*Personal Information*/
 
-            label{
-                display: inline-block;
-                // line-height: 20px;
-                width: 7.5em;
-            }
-  
+.personal-info-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: rgb(247, 246, 246);
 
-            .profile-photo{
-                display: flex;
-                align-items: center;
-        
-                .photo-block{
-                    width: 7.5em;
-                    
-                    img{
-                        height: 90px;
-                        width: 90px;
-                        padding: 10px 10px 10px 0 ;
-                        border-radius: 50%;
-                        }
-                    }
-                
-                    .upload-block{
-                        display: flex;
-                        flex-direction: column;
-                        font-size: 12px;
-                        
-                        .photo-toggle{
-                            padding-bottom: 10px;
-                        }
+label{
+    display: inline-block;
+    width: 120px;
+    align-items: center;
+    align-content: center;
+}
+    .profile-photo{
+        display: flex;
+        align-items: center;
 
-                        .upload-photo{
-                            all: unset;
-                            text-align: center;
-                            border:1px solid $primary-color ;
-                            padding: 5px;
-                            border-radius: 2em;
-
-                            &:hover{
-                                background-color: $primary-color;
-                            }
-                        }
-           
-                    }                            
+        .photo-block{
+            width: 7.5em;
             
+            img{
+                height: 90px;
+                width: 90px;
+                padding: 10px 10px 10px 0 ;
+                border-radius: 50%;
+                }
+            }
+        
+            .upload-block{
+                display: flex;
+                flex-direction: column;
+                font-size: 12px;
+                
+                .photo-toggle{
+                    padding-bottom: 10px;
                 }
 
+                .upload-photo{
+                    all: unset;
+                    text-align: center;
+                    border:1px solid $primary-color ;
+                    padding: 5px;
+                    border-radius: 2em;
 
+                    &:hover{
+                        background-color: $primary-color;
+                    }
+                }
+    
+            }                            
+    
+        }
     }
-
 }
+
     

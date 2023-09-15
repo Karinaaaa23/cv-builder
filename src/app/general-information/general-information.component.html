@@ -18,43 +18,41 @@
     <section class="personal-info">
     <div class="personal-info-group">
         <div class="personal-details">
-            <label for="first-name" minlenght="3">First Name </label>
-            <mat-form-field>
-            <input matInput type="text" id="first-name">
-            </mat-form-field>
-        </div>
+            <div class="name-group">
+                <form>
+                    <label for="first-name" class="first-name" minlenght="3">First Name </label> 
+                    <mat-form-field>
+                         <input matInput type="text" id="first-name">
+                    </mat-form-field>
+                </form>
+                
+            </div>
+            <div class="name-group">
+                <form>
+                    <label for="surname" class="surname">Surname </label>
+                    <mat-form-field >
+                        <input matInput type="text" id="surname">
+                    </mat-form-field>
+                </form>
+            </div>
 
+        </div>
+            
+
+        <!-- Photo block -->
         <div class="personal-details">
             <label class="avatar">Profile Picture</label>
             <div class="profile-photo">
-                <div class="photo-block">
+                <div class="photo-block" id="user-photo">
                     <img src="./assets/img/empty.jpg" alt="photo" id="avatar">
                 </div>
                 
                 <div class="upload-block">
                     <mat-slide-toggle class="photo-toggle">Show Picture</mat-slide-toggle>
-                    <button class="upload-photo">Upload Photo</button>
+                    <button mat-button class="upload-photo">Upload Photo</button>
                 </div>
             </div>
         </div>
-            
-        <div class="personal-details">
-            <label for="surname">Surname </label>
-            <mat-form-field>
-            <input matInput type="text" id="surname">
-            </mat-form-field>
-        </div>
-
-        <div class="personal-details">
-            <label for="job">Job Title </label>
-            <mat-form-field>
-                <input matInput type="text" id="job">
-            </mat-form-field>
-        </div>
-
     </div>
-    </section>
-
-    <!-- Work Experience -->
-   
+    </section>   
 </main>
