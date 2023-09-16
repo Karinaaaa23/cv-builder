@@ -7,28 +7,29 @@
     <section class="work-experience-group">
         <div class="additional-block-experience">
             <button mat-mini-fab id="additional-experience">
-                <mat-icon fontIcon="add" >+1</mat-icon>
+                <mat-icon fontIcon="add" ></mat-icon>
             </button> 
         </div>
         <div class="general-experience-info">
+
             <div class="experience-details">
-                <div class="workplace-details">
+                <div class="position-details">
                     <form>
-                        <label id="workplace-name" minlenght="3">Company</label>
-                        <mat-form-field>
-                            <input matInput type="text" id="worlpace-name">
+                        <mat-label class="experience-label" id="position-name" >Posiotion</mat-label>
+                        <mat-form-field appearance="fill">
+                            <input matInput type="text" id="position-name">
                         </mat-form-field>
                     </form>
                    
                 </div> 
             </div>
-            
+
             <div class="experience-details">
-                <div class="position-details">
+                <div class="workplace-details">
                     <form>
-                        <label id="position-name">Posiotion</label>
-                        <mat-form-field appearance="fill">
-                            <input matInput type="text" id="position-name">
+                        <mat-label class="experience-label" id="workplace-name" minlenght="3">Company</mat-label>
+                        <mat-form-field>
+                            <input matInput type="text" id="worlpace-name">
                         </mat-form-field>
                     </form>
                    
@@ -38,7 +39,7 @@
            <div class="experience-details">
                 <div class="experince-period">
                     <form>
-                        <label id="period">Period</label>
+                        <mat-label id="period">Period</mat-label>
                         <mat-form-field>
                         <mat-date-range-input
                         [formGroup]="campaignOne"
@@ -48,7 +49,6 @@
                         <input matStartDate placeholder="Start date" formControlName="start">
                         <input matEndDate placeholder="End date" formControlName="end">
                         </mat-date-range-input>
-                        <!-- <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint> -->
                         <mat-datepicker-toggle matIconSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
                         <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
                         </mat-form-field>
@@ -60,9 +60,9 @@
            <div class="experience-details">
             <div class="job-responsibilities">
                 <form>
-                    <label id="responsibilities">Responsibilities</label>
-                    <mat-form-field>
-                    <input matInput type="text" id="responsibilities-input">
+                    <mat-label class="experience-label" id="responsibilities">Responsibilities</mat-label>
+                    <mat-form-field class="experience-input-responsibilities" >
+                    <input matInput type="text"  id="responsibilities-input">
                     </mat-form-field>
                 </form>
             </div>

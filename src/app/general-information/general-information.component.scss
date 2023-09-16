@@ -52,12 +52,12 @@ main{
     border-radius: 1em;
     background-color: rgb(247, 246, 246);
 
-label{
-    display: inline-block;
-    width: 120px;
-    align-items: center;
-    align-content: center;
-}
+    .personal-info-label{
+        display: inline-block;
+        width: 120px;
+        align-items: center;
+        align-content: center;
+    }
     .profile-photo{
         display: flex;
         align-items: center;
@@ -91,6 +91,7 @@ label{
 
                     &:hover{
                         background-color: $primary-color;
+                        color: white;
                     }
                 }
     

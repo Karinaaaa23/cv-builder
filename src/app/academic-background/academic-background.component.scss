@@ -1,0 +1,25 @@
+// @include font-face('Gobold', 100);
+main{
+    padding: 10px;
+    line-height: 1;
+
+   .academic-background-group{
+    .general-academic-background{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-content: center;
+        align-items: center;
+        padding: 1em;
+        border-radius: 1em;
+        background-color: rgb(247, 246, 246);
+    }
+
+    .academic-background-label{
+        display: inline-block;
+        width: 120px;
+        align-items: center;
+        align-content: center;
+    }
+   } 
+
+}

@@ -1,21 +1,14 @@
 main{
     padding: 10px;
     line-height: 1;
-
-    label{
-        display: inline-block;
-        width: 120px;
-        align-items: center;
-        align-content: center;
-    }
+    // font-family: Gobold;
 
     .page-heder{
         display: grid;
         grid-template-columns: 1fr 1fr;  
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    
         justify-content: space-between;
         align-items: center;
-
-       
     }
 
    
@@ -30,31 +23,31 @@ main{
         
     .general-experience-info{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         align-content: center;
         align-items: center;
         padding: 1em;
         border-radius: 1em;
         background-color: rgb(247, 246, 246);
+    }
 
+    .experience-details{
+        .experience-label{
+            display: inline-block;
+            width: 120px;
+            align-items: center;
+            align-content: center;
+        }
 
+        .experience-input-responsibilities{
+            // dis/play: inline-block;
+            grid-row-end: span 3;
+            align-items: center;
+            align-content: center;
+            width: 80%;
+        }
     }
 }
-   
-    // .experience-details{
-    //     display: grid;
-    //     grid-template-columns: 1fr 1fr;
-    //     // justify-content: space-between;
-
-    //     .work-experience-group{
-    //         position: inherit;
-    //         display: block;
-    //         input{
-
-    //             position: inherit;
-    //         }
-    //     }
-    // }
     
 }
 
