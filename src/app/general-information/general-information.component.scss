@@ -31,8 +31,8 @@ main{
                 all: unset;
 
                     &:hover {
+                        content: "";
                         color: $primary-color;
-                                                    
                     }
                 }
 
@@ -43,7 +43,7 @@ main{
 
 /*Personal Information*/
 
-.personal-info-group{
+.general-personal-info{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;

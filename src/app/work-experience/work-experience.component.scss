@@ -41,7 +41,8 @@ main{
 
         .experience-input-responsibilities{
             // dis/play: inline-block;
-            grid-row-end: span 3;
+            grid-gap: 2rem;
+            // grid-column: span 2;
             align-items: center;
             align-content: center;
             width: 80%;

@@ -6,7 +6,7 @@ main{
    .academic-background-group{
     .general-academic-background{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         align-content: center;
         align-items: center;
         padding: 1em;
@@ -14,9 +14,13 @@ main{
         background-color: rgb(247, 246, 246);
     }
 
-    .academic-background-label{
+    .academic-background-label,
+    .fiel-of-study-label,
+    .degree-label,
+    .graduation-period-label
+    {
         display: inline-block;
-        width: 120px;
+        width: 140px;
         align-items: center;
         align-content: center;
     }
