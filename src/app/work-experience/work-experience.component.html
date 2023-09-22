@@ -15,8 +15,8 @@
             <div class="experience-details">
                 <div class="position-details">
                     <form>
-                        <mat-label class="experience-label" id="position-name" >Posiotion</mat-label>
                         <mat-form-field appearance="fill">
+                            <mat-label class="experience-label" id="position-name" >Posiotion</mat-label>
                             <input matInput type="text" id="position-name">
                         </mat-form-field>
                     </form>
@@ -27,8 +27,8 @@
             <div class="experience-details">
                 <div class="workplace-details">
                     <form>
-                        <mat-label class="experience-label" id="workplace-name" minlenght="3">Company</mat-label>
                         <mat-form-field appearance="fill">
+                            <mat-label class="experience-label" id="workplace-name" minlenght="3">Company</mat-label>
                             <input matInput type="text" id="worlpace-name">
                         </mat-form-field>
                     </form>
@@ -39,18 +39,18 @@
            <div class="experience-details">
                 <div class="work-period">
                     <form>
-                        <mat-label id="work-period" class="experience-label">Period</mat-label>
                         <mat-form-field appearance="fill">
-                        <mat-date-range-input
-                        [formGroup]="campaignOne"
-                        [rangePicker]="campaignOnePicker"
-                        [comparisonStart]="campaignTwo.value.start"
-                        [comparisonEnd]="campaignTwo.value.end">
-                        <input matStartDate placeholder="Start date" formControlName="start">
-                        <input matEndDate placeholder="End date" formControlName="end">
-                        </mat-date-range-input>
-                        <mat-datepicker-toggle matIconSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
-                        <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
+                            <mat-label id="work-period" class="experience-label">Period</mat-label>
+                            <mat-date-range-input
+                            [formGroup]="campaignOne"
+                            [rangePicker]="campaignOnePicker"
+                            [comparisonStart]="campaignTwo.value.start"
+                            [comparisonEnd]="campaignTwo.value.end">
+                            <input matStartDate placeholder="Start date" formControlName="start">
+                            <input matEndDate placeholder="End date" formControlName="end">
+                            </mat-date-range-input>
+                            <mat-datepicker-toggle matIconSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
+                            <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
                         </mat-form-field>
                     </form>
                     
@@ -60,9 +60,9 @@
            <div class="experience-details">
             <div class="job-responsibilities">
                 <form>
-                    <mat-label class="experience-label" id="responsibilities">Responsibilities</mat-label>
                     <mat-form-field appearance="fill" class="experience-input-responsibilities" >
-                    <input matInput type="text"  id="responsibilities-input">
+                        <mat-label class="experience-label" id="responsibilities">Responsibilities</mat-label>
+                        <input matInput type="text"  id="responsibilities-input">
                     </mat-form-field>
                 </form>
             </div>

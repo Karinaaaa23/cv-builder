@@ -27,6 +27,7 @@ import { BrowserModule } from '@angular/platform-browser';
     MatIconModule,
     MatInputModule,
     ReactiveFormsModule,
+    
   ],
   exports: [
     WorkExperienceComponent
