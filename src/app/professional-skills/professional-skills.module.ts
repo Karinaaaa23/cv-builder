@@ -7,6 +7,8 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatSliderModule} from '@angular/material/slider';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -22,6 +24,8 @@ import { BrowserModule } from '@angular/platform-browser';
     MatFormFieldModule,
     MatButtonModule,
     MatInputModule,
+    MatSliderModule,
+    MatIconModule,
     ReactiveFormsModule,
   ],
   exports:[

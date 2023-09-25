@@ -25,22 +25,11 @@
             </div>
 
             <div class="experience-details">
-                <div class="workplace-details">
-                    <form>
-                        <mat-form-field appearance="fill">
-                            <mat-label class="experience-label" id="workplace-name" minlenght="3">Company</mat-label>
-                            <input matInput type="text" id="worlpace-name">
-                        </mat-form-field>
-                    </form>
-                   
-                </div> 
-            </div>
-            
-           <div class="experience-details">
                 <div class="work-period">
                     <form>
                         <mat-form-field appearance="fill">
                             <mat-label id="work-period" class="experience-label">Period</mat-label>
+
                             <mat-date-range-input
                             [formGroup]="campaignOne"
                             [rangePicker]="campaignOnePicker"
@@ -57,6 +46,20 @@
                 </div>
            </div> 
 
+
+            <div class="experience-details">
+                <div class="workplace-details">
+                    <form>
+                        <mat-form-field appearance="fill">
+                            <mat-label class="experience-label" id="workplace-name" minlenght="3">Company</mat-label>
+                            <input matInput type="text" id="worlpace-name">
+                        </mat-form-field>
+                    </form>
+                   
+                </div> 
+            </div>
+            
+          
            <div class="experience-details">
             <div class="job-responsibilities">
                 <form>

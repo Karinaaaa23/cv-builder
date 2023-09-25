@@ -1,24 +1,50 @@
+
+$primary-color: #D50057;
+
 main{
     padding: 10px;
     line-height: 1;
 
+    
+
    .professioal-skills-group{
-    .general-professioal-skills{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-content: center;
         align-items: center;
         padding: 1em;
         border-radius: 1em;
         background-color: rgb(247, 246, 246);
+
+    .additional-skills-block{
+        position: absolute;
+        top: 100%;
+        left: 97.5%;
+        align-content: end;
+        // align-items:;   
     }
 
-    .skills-label{
-        display: inline-block;
-        width: 120px;
-        align-items: center;
+    .general-professioal-skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         align-content: center;
+
+        .skills-label{
+            display: inline-block;
+            width: 120px;
+            align-items: center;
+            align-content: center;
+        }
+
+        .skills-slider{
+            width: 300px;
+            --mdc-slider-active-track-color: #D50057;
+            --mdc-slider-handle-color:#D50057; 
+            --mdc-slider-inactive-track-color: darkgrey; 
+            --mdc-slider-focus-handle-color:#D50057;
+        }
+       
+
     }
+
+   
    } 
 
 }

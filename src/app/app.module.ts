@@ -8,6 +8,8 @@ import { WorkExperienceModule } from './work-experience/work-experience.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfessionalSkillsModule } from './professional-skills/professional-skills.module';
 import { AcademicBackgroundModule } from './academic-background/academic-background.module';
+import { PageStepperComponent } from './page-stepper/page-stepper.component';
+// import { PageStepperModule } from './page-stepper/page-stepper.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,7 @@ import { AcademicBackgroundModule } from './academic-background/academic-backgro
     WorkExperienceModule,
     AcademicBackgroundModule,
     ProfessionalSkillsModule,
+    // PageStepperModule,
   ],
 
   providers: [],

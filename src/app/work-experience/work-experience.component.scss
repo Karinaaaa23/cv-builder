@@ -1,16 +1,6 @@
 main{
     padding: 10px;
     line-height: 1;
-    // font-family: Gobold;
-
-    .page-heder{
-        display: grid;
-        grid-template-columns: 1fr 1fr;  
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    
-        justify-content: space-between;
-        align-items: center;
-    }
-
    
 .work-experience-group{
 
@@ -18,12 +8,11 @@ main{
         position: absolute;
         left: 97.5%;
         align-items: end;
-            // transform: translate(-50%, -50%);
-        }
+    }
         
     .general-experience-info{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         align-content: center;
         align-items: center;
         padding: 1em;
@@ -40,12 +29,8 @@ main{
         }
 
         .experience-input-responsibilities{
-            // dis/play: inline-block;
-            grid-gap: 2rem;
-            // grid-column: span 2;
-            align-items: center;
-            align-content: center;
-            width: 80%;
+            display: inline-block;
+            width: 100%;
         }
     }
 }
