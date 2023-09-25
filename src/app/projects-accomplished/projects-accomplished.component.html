@@ -1,1 +1,103 @@
-<p>projects-accomplished works!</p>
+<main>
+    <section class="page-header">
+        <h2>Projects Accomplished</h2>
+    </section>
+
+     <section class="projects-accomplished-group">
+        <div class="additional-block-projects">
+            <button mat-mini-fab id="additional-experience">
+                <mat-icon fontIcon="add" ></mat-icon>
+            </button> 
+        </div>
+
+        <div class="general-projects-accomplished-info">
+            <div class="project-details">
+                <div class="project-name">
+                    <form>
+                        <mat-form-field appearance="fill">
+                            <mat-label class="project-label" id="project-name" >Name Of Project</mat-label>
+                            <input matInput type="text" id="project-name">
+                        </mat-form-field>
+                    </form>
+                </div>
+            </div>
+
+            <div class="project-details">
+                <div class="project-period">
+                    <form>
+                        <mat-form-field appearance="fill">
+                            <mat-label id="period-of-work-on-project" class="period-label">Period</mat-label>
+                            <mat-date-range-input
+                            [formGroup]="startOfWork"
+                            [rangePicker]="startOfWorkPicker"
+                            [comparisonStart]="endOfWork.value.start"
+                            [comparisonEnd]="endOfWork.value.end">
+                            <input matStartDate placeholder="Start date" formControlName="start">
+                            <input matEndDate placeholder="End date" formControlName="end">
+                            </mat-date-range-input>
+                            <mat-datepicker-toggle matIconSuffix [for]="startOfWorkPicker"></mat-datepicker-toggle>
+                            <mat-date-range-picker #startOfWorkPicker></mat-date-range-picker>
+                        </mat-form-field>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="project-details">
+                <div class="project-description">
+                    <form>
+                        <mat-form-field appearance="fill" class="project-description-form">
+                            <mat-label class="description-label" id="project-description" >Description</mat-label>
+                            <input matInput type="text" id="description-name">
+                        </mat-form-field>
+                    </form>
+                </div>
+            </div>
+
+            <div class="project-details">
+                <div class="project-duties">
+                    <form>
+                        <mat-form-field appearance="fill" class="project-duties-form">
+                            <mat-label class="duties-label" id="project-duties" >Responsibilities</mat-label>
+                            <input matInput type="text">
+                        </mat-form-field>
+                    </form>
+                </div>
+            </div>
+  
+
+            <div class="project-details">
+                <div class="project-technologies">
+                    <form>
+                        <mat-form-field appearance="fill" class="project-technologies-form">
+                            <mat-label class="duties-label" id="project-technologies" >Technologies</mat-label>
+                            <mat-chip-grid #chipGrid aria-label="Enter technologies" >
+                                <mat-chip-row *ngFor = "let technology of technologies"
+                                (removed) = "remove(technology)"
+                                [editable] = "true"
+                                (edited) = "edit(technology, $event)"
+                                [aria-description] = "'press enter to edit '+ technology.name"
+                                >
+                                {{technology.name}}
+
+                                <button matChipRemove [attr.aria-label] ="'remove' + technology.name">
+                                    <mat-icon>cancel</mat-icon>
+                                </button>
+
+                                </mat-chip-row>
+                                <input placeholder="Push technology..."
+                                [matChipInputFor] = "chipGrid"
+                                [matChipInputSeparatorKeyCodes] = "separatorKeysCodes"
+                                [matChipInputAddOnBlur] = "addOnBlur"
+                                (matChipInputTokenEnd)="add($event)"
+                                > 
+                            </mat-chip-grid>
+
+                                                
+                        </mat-form-field>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+     </section>
+</main>

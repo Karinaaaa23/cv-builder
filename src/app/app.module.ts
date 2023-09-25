@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfessionalSkillsModule } from './professional-skills/professional-skills.module';
 import { AcademicBackgroundModule } from './academic-background/academic-background.module';
 import { PageStepperComponent } from './page-stepper/page-stepper.component';
+import { ProjectsAccomplishedModule } from './projects-accomplished/projects-accomplished.module';
 // import { PageStepperModule } from './page-stepper/page-stepper.module';
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { PageStepperComponent } from './page-stepper/page-stepper.component';
     WorkExperienceModule,
     AcademicBackgroundModule,
     ProfessionalSkillsModule,
+    ProjectsAccomplishedModule,
     // PageStepperModule,
   ],
 
