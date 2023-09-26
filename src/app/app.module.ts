@@ -10,10 +10,13 @@ import { ProfessionalSkillsModule } from './professional-skills/professional-ski
 import { AcademicBackgroundModule } from './academic-background/academic-background.module';
 import { PageStepperComponent } from './page-stepper/page-stepper.component';
 import { ProjectsAccomplishedModule } from './projects-accomplished/projects-accomplished.module';
+import { AdditionalInfoComponent } from './additional-info/additional-info.component';
+// import { PageStepperModule } from './page-stepper/page-stepper.module';
 // import { PageStepperModule } from './page-stepper/page-stepper.module';
 @NgModule({
   declarations: [
     AppComponent,
+    AdditionalInfoComponent,
   ],
   imports: [
     AppRoutingModule,
